@@ -18,6 +18,15 @@ header {
   height: 4.5em;
 }
 
+.module_presentation {
+  height: 20em;
+}
+
+@media only screen and (min-width: 522px) {
+  .module_presentation {
+    height: 16.5em;
+  }
+}
 .bgc_f6 {
   background-color: #f6f6f6;
 }
@@ -70,7 +79,32 @@ article img {
 }
 
 h1 {
-  margin: 1.5em 2em 0 2em;
+  margin: 1.5em 2em 0.4em 2em;
+}
+
+p {
+  font-weight: 100;
+  margin-bottom: 1.5em;
+}
+
+@media only screen and (min-width: 365px) {
+  p {
+    margin: auto 1em 1.5em 1em;
+  }
+}
+.btn_validation {
+  background: linear-gradient(#ff79dA, #9356dc);
+  border-radius: 50px 50px;
+  width: 15em;
+  display: block;
+  margin: auto;
+  padding: 1em 1em;
+  border-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.9em;
+  color: #fff;
+  box-shadow: 0 3px 8px #a9a9a9;
 }
 
 /*# sourceMappingURL=accueil.css.map */

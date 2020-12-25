@@ -107,4 +107,40 @@ p {
   box-shadow: 0 3px 8px #a9a9a9;
 }
 
+.pastille {
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 1.3em;
+  height: 1.3em;
+  background-color: #9356dc;
+  font-size: 0.9em;
+  color: #fff;
+  margin-right: 1em;
+  transform: translateX(-130%);
+}
+
+h2, h3 {
+  margin: 2em 1em 1em 1em;
+  font-size: 1.4em;
+}
+
+.btn_fonction {
+  border-radius: 15px 15px;
+  width: 18.5em;
+  margin: auto;
+  padding: 1em 1em;
+  border-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.9em;
+  box-shadow: 0 3px 8px #ebebeb;
+}
+
+.i_fonction {
+  color: #808080;
+  padding-right: 1em;
+  font-size: 1.2em;
+}
+
 /*# sourceMappingURL=accueil.css.map */

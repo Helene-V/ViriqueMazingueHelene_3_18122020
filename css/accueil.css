@@ -67,7 +67,6 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: #ebebeb;
-  width: 100%;
   height: 3em;
   box-shadow: inset 0 2px 5px 0 #d5d5d5;
 }
@@ -128,7 +127,6 @@ h2 {
 }
 
 h3 {
-  margin: 1em 0 1em 0;
   font-size: 1.4em;
 }
 
@@ -153,13 +151,10 @@ h3 {
 .i_fonction {
   color: #808080;
   padding-right: 1em;
-  padding-left: -0.2em;
   font-size: 1.2em;
 }
 
 main {
-  width: 100%;
-  height: 100%;
   padding: 1em 1em 2em 1em;
 }
 
@@ -173,7 +168,6 @@ article img {
 .carte {
   background-color: #fff;
   border-radius: 16px 16px 16px 16px;
-  width: 98%;
   height: 14em;
   margin-bottom: 1em;
   box-shadow: 0 3px 9px #d3d3d3;
@@ -221,7 +215,6 @@ h5 {
   }
 
   .carte {
-    width: 98%;
     height: 21em;
   }
 
@@ -240,13 +233,12 @@ h5 {
 footer {
   background-color: #323232;
   color: #fff;
-  width: 100%;
-  height: 180px;
+  height: 11em;
 }
 
 footer li {
   list-style-type: none;
-  margin: 0.5em 0 0.5em 0;
+  margin: 0 0 0.5em 0;
 }
 
 footer ul {

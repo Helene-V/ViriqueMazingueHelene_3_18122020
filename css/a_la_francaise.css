@@ -1,3 +1,146 @@
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-family: "Shrikhand", cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap");
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.centrer {
+  text-align: center;
+}
+
+header {
+  display: flex;
+  width: auto;
+  height: 4.4em;
+  align-items: center;
+}
+
+.fas.fa-arrow-left {
+  align-items: center;
+  margin-left: 1em;
+  font-size: 1.1em;
+}
+
+.logo {
+  width: auto;
+  height: 1.5em;
+  margin: 2% 1% 1% 18%;
+}
+
+.presentation {
+  width: 100%;
+  height: auto;
+}
+
+.visuel {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+main {
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  transform: translateY(-3em);
+  padding-top: 1em;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.4em;
+  margin: 0.5em auto 1em 0.8em;
+  letter-spacing: normal;
+}
+
+.i_coeur {
+  font-size: 1.3em;
+  position: relative;
+  float: inline-end;
+  transform: translate(-30px, -50px);
+}
+
+.menus {
+  margin: 1em 0.8em 1em 0.8em;
+  padding-bottom: 2em;
+}
+
+h2, h4, h5 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 1em 1em 1em 0;
+  padding-bottom: 2px;
+  border-bottom: 3px solid #99e2d0;
+  width: 42px;
+}
+
+.btn_validation {
+  background: linear-gradient(#ff79dA, #9356dc);
+  border-radius: 50px 50px;
+  width: 15em;
+  display: block;
+  margin: auto;
+  padding: 1em 1em;
+  border-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.9em;
+  color: #fff;
+  box-shadow: 0 3px 8px #a9a9a9;
+}
+
+footer {
+  background-color: #323232;
+  color: #fff;
+  width: 100%;
+  height: 180px;
+}
+
+footer li {
+  list-style-type: none;
+  margin: 0.5em 0 0.5em 0;
+}
+
+footer ul {
+  margin: 0;
+}
+
+footer ul a {
+  color: #fff;
+}
+
+h6 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.2em;
+  letter-spacing: 0.1rem;
+  margin: 0;
+  padding-top: 1em;
+}
+
+.i_footer {
+  padding-right: 1em;
+}
+
+.i_hands {
+  font-size: 0.8em;
+}
 
 /*# sourceMappingURL=a_la_francaise.css.map */

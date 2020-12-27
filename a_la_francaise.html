@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="./css/accueil.css" />
+		<link rel="stylesheet" href="./css/a_la_francaise.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
@@ -11,15 +11,15 @@
 	</head>
 	<body>
 		<header>
-			<a href="accueil.html"><i class="fas fa-arrow-left"></i></a>
-			<img id="logo" src="img/logo/ohmyfood.png" alt="logo Oh My Food">
-			<img class="visuel" src="img/restaurants/a_la_francaise.jpg" alt="Photo restaurant à la française">
+				<a href="accueil.html"><i class="fas fa-arrow-left flex"></i></a>
+				<img class="logo" src="img/logo/ohmyfood.png" alt="logo Oh My Food">
 		</header>
-		<main>
-			<div class="titre">
-				<h1>À la française</h1>
-				<i class="far fa-heart"></i>
-			</div>
+			<section class="presentation">
+				<img class="visuel" src="img/restaurants/a_la_francaise.jpg" alt="Photo restaurant à la française">
+			</section>
+			<main>
+					<h1>À la française</h1>
+					<i class="far fa-heart i_coeur"></i>
 			<div class="menus">
 				<h2>ENTRÉES</h2>
 				<article>
@@ -92,20 +92,36 @@
 					</p>
 				</article>
 			</div>
-			<button class="btn_validation btn_accueil" type="button">Commander</button>
+			<button class="btn_validation" type="button">Commander</button>
 		</main>
 		<footer>
 			<ul>
-				<li><h6 class="logo_script">ohmyfood</h6></li>
 				<li>
-					<a href=""><i class="fas fa-utensils"></i>Proposer un restaurant</a>
-					<li>
-						<a href=""><i class="fas fa-hands-helping"></i>Devenir patenaire</a>
-					</li>
-					<li><a href="">Mentions légales</a></li>
-					<li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+					<h6>ohmyfood</h6>
+				</li>
+				<li>
+					<a href="">
+						<i class="fas fa-utensils i_footer"></i>
+						Proposer un restaurant
+					</a>
+				</li>
+					<a href="">
+						<i class="fas fa-hands-helping i_hands"></i>
+						Devenir patenaire
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Mentions légales
+					</a>
+				</li>
+				<li>
+					<a href="mailto:contact@ohmyfood.com">
+						Contact
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>
 

@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Helene-V/ViriqueHelene_3_18122020.git"
+  }
   "scripts": {
     "sass": 
       ["sass --watch ./sass/accueil.scss:./css/accueil.css",
@@ -11,6 +15,6 @@
       "sass --watch ./sass/la_palette_du_gout.scss:./css/la_palette_du_gout.css",
       "sass --watch ./sass/le_delice_des_sens.scss:./css/le_delice_des_sens.css"]
   },
-  "author": "",
+  "author": "Ln",
   "license": "ISC"
 }

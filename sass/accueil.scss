@@ -25,18 +25,25 @@ header {
     height: 4.5em;
 }
 
+$bg_color:#f6f6f6;
+$charte_pink:#ff79da;
+$charte_purple:#9356DC;
+$charte_mint:#99e2d0;
+$gradient: $charte_pink, $charte_purple;
+$text_white:#fff;
+$emerald:#088e6d;
+$footer-color:#323232;
+$font_btn:'Roboto', sans-serif;
+
 .module_presentation {
     height: 20em;
+    background-color: $bg_color;
 }
 
 @media only screen and (min-width: 522px){
 	.module_presentation {
         height: 16.5em;
     }
-}
-
-.bgc_f6 {
-    background-color: #f6f6f6;
 }
 
 .logo {
@@ -53,12 +60,12 @@ header {
 }
 
 .city {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        font-size: 1em;
-        border: 0;
-        background-color: #ebebeb;
-        width: 10em;
+    font-family: $font_btn;
+    font-weight: 500;
+    font-size: 1em;
+    border: 0;
+    background-color: #ebebeb;
+    width: 10em;
 }
 
 .fas.fa-map-marker-alt {
@@ -103,18 +110,25 @@ h2 {
 }
 
 .btn_validation {
-    background: linear-gradient(#ff79dA, #9356dc);
+    background: linear-gradient($gradient);
+    font-family: $font_btn;
     border-radius: 50px 50px;
     width: 15em;
     display: block;
     margin: auto;
     padding: 1em 1em;
     border-style: none;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 0.9em;
-    color: #fff;
+    color: $text_white;
     box-shadow: 0 3px 8px #a9a9a9;
+
+    &:hover {
+        transition-property: all;
+	    transition-duration: 0.1s;
+        filter: brightness(110%);
+        box-shadow: 0 5px 15px #808080;
+    }
 }
 
 .pastille {
@@ -123,9 +137,9 @@ h2 {
     border-radius: 50%;
     width: 1.3em;
     height: 1.3em;
-    background-color: #9356dc;
+    background-color: $charte_purple;
     font-size: 0.9em;
-    color: #fff;
+    color: $text_white;
     margin-right: 1em;
     transform: translateX(-40%);
 }
@@ -141,13 +155,14 @@ h3 {
 }
 
 .btn_fonction {
+    background-color: $bg_color;
+    font-family: $font_btn;
     border-radius: 15px 15px;
     width: 18.5em;
     margin: auto;
     margin-bottom: 1.2em;
     padding: 1em 2em 1em 0;
     border-style: none;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 0.9em;
     box-shadow: 0 3px 8px #dcdcdc;
@@ -161,6 +176,7 @@ h3 {
 
 main {
     padding: 1em 1em 2em 1em;
+    background-color: $bg_color;
 }
 
 article img {
@@ -171,7 +187,7 @@ article img {
 }
 
 .carte {
-    background-color: #fff;
+    background-color: $text_white;
     border-radius: 16px 16px 16px 16px;
     height: 14em;
     margin-bottom: 1em;
@@ -201,8 +217,8 @@ h5 {
     justify-content: center;
     font-weight: 500;
     font-size: 0.8em;
-    color: #088e6d;
-    background-color: #99E2D0;
+    color: $emerald;
+    background-color: $charte_mint;
     width: 65px;
     height: 25px;
     position: relative;
@@ -236,8 +252,8 @@ h5 {
 }
 
 footer {
-    background-color: #323232;
-    color: #fff;
+    background-color: $footer-color;
+    color: $text_white;
     height: 11em;
 }
 
@@ -248,10 +264,10 @@ footer li {
 
 footer ul {
     margin: 0;
-}
 
-footer ul a{
-    color: #fff;
+    a{
+    color: $text_white;
+    }
 }
 
 h6 {

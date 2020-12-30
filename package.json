@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Helene-V/ViriqueHelene_3_18122020.git"
-  }
+  "homepage": "https://helene-v.github.io/ViriqueHelene_3_18122020/accueil.html",
   "scripts": {
     "sass": 
       ["sass --watch ./sass/accueil.scss:./css/accueil.css",

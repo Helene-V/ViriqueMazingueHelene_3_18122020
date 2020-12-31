@@ -8,7 +8,12 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
-	padding: 0; 
+    padding: 0; 
+}
+
+.i_coeur {
+    -webkit-font-smoothing : antialiased;
+    -moz-osx-font-smoothing : grayscale;
 }
 
 a {

@@ -9,11 +9,6 @@ body {
   padding: 0;
 }
 
-.i_coeur {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -203,11 +198,17 @@ h5 {
   font-weight: 300;
 }
 
-.i_coeur {
-  font-size: 1.5em;
+.coeur {
   position: relative;
-  float: inline-end;
-  transform: translate(-20px, -40px);
+  font-size: 1.5em;
+  justify-content: end;
+  margin: -2em 1em 0 0;
+}
+
+.etiquette {
+  justify-content: end;
+  position: relative;
+  margin: -10em 1em 0 0;
 }
 
 .etiquette_new {
@@ -219,9 +220,6 @@ h5 {
   background-color: #99e2d0;
   width: 65px;
   height: 25px;
-  position: relative;
-  float: inline-end;
-  transform: translate(15px, -200px);
 }
 
 @media only screen and (min-width: 768px) {
@@ -237,16 +235,19 @@ h5 {
     height: 21em;
   }
 
-  .etiquette_new {
-    font-weight: 700;
-    font-size: 1em;
-    width: 90px;
-    height: 50px;
-    transform: translate(-10px, -250px);
+  .etiquette {
+    margin: -15em 1.5em 0 0;
   }
 
-  .i_coeur {
-    transform: translate(-40px, -30px);
+  .etiquette_new {
+    font-size: 1em;
+    width: 75px;
+    height: 35px;
+  }
+
+  .coeur {
+    font-size: 1.8em;
+    margin: -1.5em 1em 0 0;
   }
 }
 footer {

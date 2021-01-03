@@ -217,11 +217,27 @@ h5 {
 }
 
 .coeur {
-    font-smooth: auto;
-    position: relative;
-    font-size: 1.5em;
+    font-size: 26px;
     justify-content: end;
-    margin: -2em 1em 0 0;
+    margin: -1.5em 1em 0 0;
+    z-index: 1;
+    position: relative;
+}
+
+.i_coeur-plein{
+    position: relative; right: 25px; top: 1px;
+    font-size: 24px;
+    color: #fff;
+    z-index: 2;
+}
+
+.i_coeur-plein:hover{
+    color: $charte_purple;
+    transition: all ease-in-out 1000ms;
+}
+
+.coeur:hover{
+    color: #fff;
 }
 
 .etiquette {
@@ -261,11 +277,6 @@ h5 {
         font-size: 1em;
         width: 75px;
         height: 35px;
-    }
-
-    .coeur {
-        font-size: 1.8em;
-        margin: -1.5em 1em 0 0;
     }
 }
 

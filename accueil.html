@@ -10,13 +10,19 @@
 		<title>OhMyFood</title>
 	</head>
 	<body>
+		<div class="loader">
+			<div class="point"></div>
+			<div class="point"></div>
+			<div class="point"></div>
+		</div>
+		<div class="container">
 		<header id="haut_de_page">
 			<div class="centrer">
 				<img class="logo" src="img/logo/ohmyfood.png" alt="logo Oh My Food">
 			</div>
 		</header>
 		<section class="module_presentation">
-			<div class="champ_de_recherche flex">
+			<div class="flex champ_de_recherche">
 				<div class="choix_ville">
 					<i class="fas fa-map-marker-alt"></i><input class="city" type="text" name="texte" value="Paris, Belleville" placeholder="Ex : Paris, Belleville">
 				</div>
@@ -29,22 +35,22 @@
 		</section>
 		<section class="module_utilisation">
 			<h2>Fonctionnement</h2>
-			<button class="btn_fonction flex" type="button">
-				<span class="pastille flex">
+			<button class="flex btn_fonction" type="button">
+				<span class="flex pastille">
 					1
 				</span>				
 				<i class="fas fa-mobile-alt i_fonction"></i>
 				Choisissez un restaurant
 			</button>
-			<button class="btn_fonction flex" type="button">
-				<span class="pastille flex">
+			<button class="flex btn_fonction" type="button">
+				<span class="flex pastille">
 					2
 				</span>				
 				<i class="fas fa-list-ul i_fonction"></i>
 				Composez votre menu
 			</button>
-			<button class="btn_fonction flex" type="button">
-				<span class="pastille flex">
+			<button class="flex btn_fonction" type="button">
+				<span class="flex pastille">
 					3
 				</span>				
 				<i class="fas fa-store i_fonction"></i>
@@ -64,8 +70,8 @@
 					<i class="fas fa-heart i_coeur"></i>
 					<i class="fas fa-heart i_coeur-plein"></i>
 				</div>
-				<div class="etiquette flex">
-					<div class="etiquette_new flex">
+				<div class="flex etiquette">
+					<div class="flex etiquette_new">
 						<span>Nouveau</span>
 					</div>
 				</div>
@@ -78,12 +84,12 @@
 				<h5>
 					Charonne
 				</h5>
-				<div class="coeur flex">
+				<div class="flex coeur">
 					<i class="fas fa-heart i_coeur"></i>
 					<i class="fas fa-heart i_coeur-plein"></i>
 				</div>
-				<div class="etiquette flex">
-					<div class="etiquette_new flex">
+				<div class="flex etiquette">
+					<div class="flex etiquette_new">
 						<span>Nouveau</span>
 					</div>
 				</div>
@@ -96,7 +102,7 @@
 				<h5>
 					Cité Rouge
 				</h5>
-				<div class="coeur flex">
+				<div class="flex coeur">
 					<i class="fas fa-heart i_coeur"></i>
 					<i class="fas fa-heart i_coeur-plein"></i>
 				</div>
@@ -109,7 +115,7 @@
 				<h5>
 					Folie-Méricourt
 				</h5>
-				<div class="coeur flex">
+				<div class="flex coeur">
 					<i class="fas fa-heart i_coeur"></i>
 					<i class="fas fa-heart i_coeur-plein"></i>
 				</div>
@@ -127,6 +133,7 @@
 				</ul>
 			</nav>
 		</footer>
+	</div>
 	</body>
 </html>
 

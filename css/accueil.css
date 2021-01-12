@@ -23,6 +23,61 @@ header {
   height: 4.5em;
 }
 
+.container {
+  position: relative;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 25%;
+  background-color: #fff;
+  animation: positionAnim 4s linear 100ms alternate;
+}
+
+.point {
+  height: 10ch;
+  width: 10ch;
+  margin: 0 auto 20px auto;
+  box-sizing: border-box;
+  border-radius: 50%;
+  animation: animLoader 4s linear 100ms alternate;
+}
+
+@keyframes animLoader {
+  0% {
+    background-color: #ff79da;
+    opacity: 1;
+    transform: translateX(-10%);
+  }
+  50% {
+    background-color: #9356DC;
+    opacity: 0.25;
+    transform: translateX(50%);
+  }
+  100% {
+    background-color: #99e2d0;
+    opacity: 1;
+    transform: translateX(-10%);
+  }
+}
+@keyframes positionAnim {
+  0% {
+    z-index: 3;
+    opacity: 1;
+  }
+  99% {
+    z-index: 3;
+    opacity: 1;
+  }
+  100% {
+    z-index: -3;
+    opacity: 0;
+  }
+}
 .module_presentation {
   height: 20em;
   background-color: #f6f6f6;

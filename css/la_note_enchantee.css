@@ -115,7 +115,6 @@ h2, h4, h5 {
   animation: microSlideMenus 4s;
   transform-origin: bottom;
   width: 100%;
-  z-index: 1;
 }
 
 @keyframes microSlideMenus {
@@ -149,60 +148,15 @@ p {
   flex-direction: row;
 }
 
-.price_box {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-between;
-  padding: 0 auto 0 5px;
-  z-index: 2;
-}
-
 .price {
   font-weight: 700;
+  margin: 0.4em 0 0 0.5em;
 }
 
 .btn_coche {
-  height: 54px;
-  width: 5em;
-  border-radius: 0 12px 12px 0;
-  background-color: #99e2d0;
-  animation-name: taille;
-  animation-duration: 3s;
-  transform-origin: right;
-  z-index: 3;
+  display: none;
 }
 
-.validation {
-  position: absolute;
-  color: #fff;
-  font-size: 2em;
-  animation-name: rotation;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  z-index: 4;
-}
-
-@keyframes taille {
-  0% {
-    max-width: 15em;
-    transform: scale(0);
-  }
-  100% {
-    max-width: 15em;
-    transform: scale(1);
-  }
-}
-@keyframes rotation {
-  0% {
-    margin-left: 100%;
-  }
-  100% {
-    transform: rotate(360deg);
-    margin-left: -10%;
-  }
-}
 @media only screen and (min-width: 768px) {
   h1 {
     text-align: center;

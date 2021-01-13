@@ -88,7 +88,7 @@ h1 {
 }
 
 .coeur:hover {
-  color: #f6f6f6;
+  color: #fff;
 }
 
 .menus {
@@ -106,25 +106,75 @@ h2, h4, h5 {
 }
 
 .repas {
+  align-items: center;
   background-color: #fff;
   border-radius: 12px 12px;
-  padding: 0.6em 0.6em;
   margin-bottom: 1em;
   box-shadow: 0 3px 8px #dcdcdc;
-  transition: 0.5s;
-  animation: microSlideMenus 4s;
+  animation: microSlideMenus 3s;
   transform-origin: bottom;
+  z-index: 1;
+  width: 100%;
+  height: 4em;
+  padding-left: 0.5em;
+}
+
+.repas_box {
   width: 100%;
 }
 
+.btn_coche {
+  display: flex;
+  justify-content: center;
+  width: 5.5em;
+  height: 100%;
+  border-radius: 0 12px 12px 0;
+  margin-left: 0.5em;
+  background-color: #99e2d0;
+  animation-name: taille;
+  animation-duration: 4s;
+  transform-origin: right;
+  z-index: 2;
+}
+
+.coche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+  animation-name: rotation;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  z-index: 3;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+@keyframes taille {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@keyframes rotation {
+  0% {
+    margin-left: 100%;
+  }
+  100% {
+    transform: rotate(360deg);
+    margin-left: 0%;
+  }
+}
 @keyframes microSlideMenus {
   0% {
-    margin-top: 20px;
+    margin-top: 2em;
     opacity: 0;
   }
   100% {
-    opacity: 1;
     margin-top: 0;
+    opacity: 1;
   }
 }
 h3 {
@@ -143,49 +193,15 @@ p {
   text-overflow: ellipsis;
 }
 
-.accompagnement {
-  display: flex;
-  flex-direction: row;
-}
-
 .price {
   font-weight: 700;
   margin: 0.4em 0 0 0.5em;
 }
 
-.btn_coche {
-  display: none;
+.info_price_box {
+  justify-content: space-between;
 }
 
-@media only screen and (min-width: 768px) {
-  h1 {
-    text-align: center;
-    font-size: 1.7em;
-  }
-
-  .menus {
-    margin: 1em 2em 1em 2em;
-  }
-
-  .logo {
-    margin: 2% 1% 1% 35%;
-    height: 1.8em;
-  }
-
-  .visuel {
-    height: 300px;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .logo {
-    margin: 2% 1% 1% 40%;
-  }
-}
-@media only screen and (min-width: 1920px) {
-  .logo {
-    margin: 2% 1% 1% 44%;
-  }
-}
 .btn_validation {
   background: linear-gradient(#ff79da, #9356DC);
   font-family: "Roboto", sans-serif;
@@ -239,6 +255,36 @@ h6 {
 
 .i_hands {
   font-size: 0.8em;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    text-align: center;
+    font-size: 1.7em;
+  }
+
+  .menus {
+    margin: 1em 2em 1em 2em;
+  }
+
+  .logo {
+    margin: 2% 1% 1% 35%;
+    height: 1.8em;
+  }
+
+  .visuel {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .logo {
+    margin: 2% 1% 1% 40%;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .logo {
+    margin: 2% 1% 1% 44%;
+  }
 }
 
 /*# sourceMappingURL=la_note_enchantee.css.map */

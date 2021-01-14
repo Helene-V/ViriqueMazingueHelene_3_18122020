@@ -105,6 +105,10 @@ h2, h4, h5 {
   width: 42px;
 }
 
+.fas.fa-check-circle {
+  color: #fff;
+}
+
 .repas {
   align-items: center;
   background-color: #fff;
@@ -123,7 +127,7 @@ h2, h4, h5 {
   width: 100%;
 }
 
-.btn_coche {
+.repas:hover .btn_coche {
   display: flex;
   justify-content: center;
   width: 5.5em;
@@ -132,24 +136,22 @@ h2, h4, h5 {
   margin-left: 0.5em;
   background-color: #99e2d0;
   animation-name: taille;
-  animation-duration: 4s;
+  animation-duration: 2s;
   transform-origin: right;
   z-index: 2;
+  overflow: hidden;
 }
-
-.coche {
+.repas:hover .coche {
   display: flex;
   justify-content: center;
   align-items: center;
   transition-duration: 0.5s;
   animation-name: rotation;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
   z-index: 3;
-  color: #fff;
   font-size: 1.5em;
 }
-
 @keyframes taille {
   0% {
     width: 0%;
@@ -161,12 +163,15 @@ h2, h4, h5 {
 @keyframes rotation {
   0% {
     margin-left: 100%;
+    transform: scale(0.2em);
   }
   100% {
     transform: rotate(360deg);
     margin-left: 0%;
+    transform: scale(1em);
   }
 }
+
 @keyframes microSlideMenus {
   0% {
     margin-top: 2em;

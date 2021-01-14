@@ -280,10 +280,6 @@ h6 {
     font-size: 1.7em;
   }
 
-  .menus {
-    margin: 1em 6em 1em 6em;
-  }
-
   .logo {
     margin: 2% 1% 1% 35%;
     height: 1.8em;
@@ -292,10 +288,26 @@ h6 {
   .visuel {
     height: 300px;
   }
+
+  .menus {
+    margin: 1em 4em 1em 4em;
+  }
+
+  .repas {
+    margin-left: 0.5rem;
+  }
+
+  .repas:hover .repas_box {
+    width: 100%;
+  }
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 992px) {
   .logo {
     margin: 2% 1% 1% 40%;
+  }
+
+  .container {
+    display: flex;
   }
 }
 @media only screen and (min-width: 1920px) {

@@ -1,5 +1,4 @@
-@font-face
-{
+@font-face {
 	font-family: 'Roboto', sans-serif;
     font-family: 'Shrikhand', cursive;
 	src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap');
@@ -36,11 +35,11 @@ $emerald:#088e6d;
 $footer-color:#323232;
 $font_btn:'Roboto', sans-serif;
 
-.container{
+.container {
     position: relative;
 }
 
-.loader{
+.loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -51,45 +50,54 @@ $font_btn:'Roboto', sans-serif;
     animation: positionAnim 4s linear 100ms alternate;
 }
   
-.point{
-      height: 10ch;
-      width: 10ch;
-      margin: 0 auto 20px auto;
-      box-sizing: border-box;
-      border-radius: 50%;
-      animation: animLoader 4s linear 100ms alternate;
-  }
+.point {
+    height: 5ch;
+    width: 5ch;
+    margin: 0 auto 20px auto;
+    box-sizing: border-box;
+    border-radius: 50%;
+    animation: animLoader 3s linear 100ms alternate;
+}
   
-@keyframes animLoader{
-      0%{background-color: #ff79da; opacity: 1; transform:translateX(-10%);}
-      50%{background-color: #9356DC; opacity: 0.25; transform:translateX(50%);}
-      100%{background-color: #99e2d0; opacity: 1; transform:translateX(-10%);}
+@keyframes animLoader {
+    0% {
+        background-color: #ff79da;
+        opacity: 1;
+        transform:translateX(-10%);
+        transform: scale(1);
+    }
+    50% {
+        background-color: #9356DC;
+        opacity: 0.25;
+        transform:translateX(50%);
+        transform: scale(2);
+    }
+    100% {
+        background-color: #99e2d0;
+        opacity: 1;
+        transform:translateX(-10%);
+        transform: scale(0.2);
+    }
 }
 
 @keyframes positionAnim {
     0% {
-      z-index: 3;
-      opacity: 1;
+        z-index: 3;
+        opacity: 1;
     }
-    99%{
+    99% {
         z-index: 3;
         opacity: 1;
     }
     100% {
-      z-index: -3;
-      opacity: 0;
+        z-index: -3;
+        opacity: 0;
     }
   }
 
 .module_presentation {
     height: 20em;
     background-color: $bg_color;
-}
-
-@media only screen and (min-width: 522px){
-	.module_presentation {
-        height: 16.5em;
-    }
 }
 
 .logo {
@@ -140,12 +148,6 @@ p {
     margin-bottom: 1.5em;
 }
 
-@media only screen and (min-width: 365px){
-	p{
-        margin: auto 1em 1.5em 1em;
-    }
-}
-
 h2 {
     margin: 1.5em 1em 1em 0.7em;
     font-size: 1.4em;
@@ -192,12 +194,6 @@ h2 {
 
 h3 {
     font-size: 1.4em;
-}
-
-@media only screen and (min-width: 415px){
-    h2{
-        text-align: center;
-    }
 }
 
 .btn_fonction {
@@ -269,19 +265,19 @@ h5 {
     position: relative;
 }
 
-.i_coeur-plein{
+.i_coeur-plein {
     position: relative; right: 25px; top: 1px;
     font-size: 24px;
     color: $white;
     z-index: 2;
 }
 
-.i_coeur-plein:hover{
+.i_coeur-plein:hover {
     color: $charte_purple;
     transition: all ease-in-out 1000ms;
 }
 
-.coeur:hover{
+.coeur:hover {
     color: $white;
 }
 
@@ -302,8 +298,61 @@ h5 {
     height: 25px;
 }
 
+footer {
+    background-color: $footer-color;
+    color: $white;
+    height: 11em;
+}
+
+footer li {
+    list-style-type: none;
+    margin: 0 0 0.5em 0;
+}
+
+footer ul {
+    margin: 0;
+
+    a {
+    color: $white;
+    }
+}
+
+h6 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.2em;
+    letter-spacing: 0.1rem;
+    margin: 0;
+    padding-top: 1em;
+}
+
+.i_footer {
+    padding-right: 0.5em;
+}
+
+.i_hands {
+    font-size: 0.8em;
+}
+
+@media only screen and (min-width: 365px){
+	p {
+        margin: auto 1em 1.5em 1em;
+    }
+}
+
+@media only screen and (min-width: 415px){
+    h2 {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 522px){
+	.module_presentation {
+        height: 16.5em;
+    }
+}
+
 @media only screen and (min-width: 768px){
-    h3, h4, h5{
+    h3, h4, h5 {
         text-align: center;
     }
     article img {
@@ -325,37 +374,29 @@ h5 {
     }
 }
 
-footer {
-    background-color: $footer-color;
-    color: $white;
-    height: 11em;
-}
-
-footer li {
-    list-style-type: none;
-    margin: 0 0 0.5em 0;
-}
-
-footer ul {
-    margin: 0;
-
-    a{
-    color: $white;
+@media only screen and (min-width: 992px){
+    main {
+        padding: 1em 5% 2em 5%;
+    }
+    .pied {
+        padding-left: 5%;
     }
 }
 
-h6 {
-    font-family: 'Shrikhand', cursive;
-    font-size: 1.2em;
-    letter-spacing: 0.1rem;
-    margin: 0;
-    padding-top: 1em;
+@media only screen and (min-width: 1280px){
+    main {
+        padding: 1em 10% 2em 10%;
+    }
+    .pied {
+        padding-left: 10%;
+    }
 }
 
-.i_footer {
-    padding-right: 0.5em;
-}
-
-.i_hands{
-    font-size: 0.8em;
+@media only screen and (min-width: 1920px){
+    main {
+        padding: 1em 15% 2em 15%;
+    }
+    .pied {
+        padding-left: 15%;
+    }
 }

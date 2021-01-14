@@ -116,11 +116,16 @@ h2, h4, h5 {
 }
 
 .fas.fa-check-circle{
-    color: #fff;
+    color: $white;
+}
+
+.info_price_box{
+    justify-content: space-between;
 }
 
 .repas {
     align-items: center;
+    justify-content: space-between;
     background-color: $white;
     border-radius: 12px 12px;
     margin-bottom: 1em;
@@ -134,66 +139,66 @@ h2, h4, h5 {
 }
 
 .repas_box {
-    width: 100%;
+    width: auto;
 }
 
 .repas:hover{
-.btn_coche {
-    display: flex;
-    justify-content: center;
-    width: 5.5em;
-    height: 100%;
-    border-radius: 0 12px 12px 0;
-    margin-left: 0.5em;
-    background-color: $charte_mint;
-    animation-name: taille;
-    animation-duration: 2s;
-    transform-origin: right;
-    z-index: 2;
-    overflow: hidden;
-}
-
-.coche {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 0.5s;
-    animation-name: rotation;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    z-index: 3;
-    font-size: 1.5em;
-}
-
-@keyframes taille{
-    0%{
-        width: 0%;
+    .repas_box {
+        width: 71%;
     }
-    100%{
+    .btn_coche {
+        display: flex;
+        justify-content: center;
+        width: 5.5em;
+        height: 100%;
+        border-radius: 0 12px 12px 0;
+        background-color: $charte_mint;
+        animation-name: taille;
+        animation-duration: 500ms;
+        transform-origin: right;
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    .coche {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 0.5s;
+        animation-name: rotation;
+        animation-duration: 800ms;
+        animation-iteration-count: 1;
+        z-index: 3;
+        font-size: 1.5em;
+        margin: 0 20px;
+    }
+
+    @keyframes taille {
+        0% {
+        width: 0%;
+        }
+    100% {
         width: 5.5em;
     }
 }
 
-@keyframes rotation{
-    0%{
-        margin-left: 100%;
+    @keyframes rotation {
+        0% {
         transform: scale(0.2em);
-    }
-
-    100%{
+        }
+        100% {
         transform: rotate(360deg);
-        margin-left: 0%;
         transform: scale(1em);
+        }
     }
-}
 }
 
-@keyframes microSlideMenus{
-    0%{
+@keyframes microSlideMenus {
+    0% {
         margin-top: 2em;
-        opacity: 0;
+      opacity: 0;
     }
-    100%{
+    100% {
         margin-top: 0;
         opacity: 1;
     }
@@ -217,11 +222,7 @@ p {
 
 .price {
     font-weight: 700;
-    margin: 0.4em 0 0 0.5em;
-}
-
-.info_price_box {
-    justify-content: space-between;
+    margin: 0.4em 0.5em 0 0.5em;
 }
 
 .btn_validation {
@@ -281,31 +282,43 @@ h6 {
     font-size: 0.8em;
 }
 
+@media only screen and (min-width: 320px){
+    .repas_box {
+                width: 100%;
+    }
+}
+
+@media only screen and (min-width: 414px){
+    .menus {
+        margin: 1em 2em 1em 2em;
+    }
+}
+
 @media only screen and (min-width: 768px){
-    h1{
+    h1 {
         text-align: center;
         font-size: 1.7em;
     }
-    .menus{
-        margin: 1em 2em 1em 2em;
+    .menus {
+        margin: 1em 6em 1em 6em;
     }
-    .logo{
+    .logo {
         margin: 2% 1% 1% 35%;
         height: 1.8em;
     }
-    .visuel{
+    .visuel {
         height: 300px;
     }
 }
 
 @media only screen and (min-width: 1000px){
-    .logo{
+    .logo {
         margin: 2% 1% 1% 40%;
     }
 }
 
 @media only screen and (min-width: 1920px){
-    .logo{
+    .logo {
         margin: 2% 1% 1% 44%;
     }
 }

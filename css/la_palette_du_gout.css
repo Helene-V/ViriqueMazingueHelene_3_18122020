@@ -65,13 +65,30 @@ h1 {
   padding: 1em 0 0 0.7em;
 }
 
-.i_coeur {
-  font-size: 1.3em;
+.coeur {
+  font-size: 26px;
+  justify-content: end;
+  margin: -1.1em 0.5em 0 0;
+  z-index: 1;
+  position: relative;
 }
 
-.coeur {
-  justify-content: end;
-  margin: -2em 2em 0 0;
+.i_coeur-plein {
+  position: relative;
+  right: 25px;
+  top: 1px;
+  font-size: 24px;
+  color: #f6f6f6;
+  z-index: 2;
+}
+
+.i_coeur-plein:hover {
+  color: #9356DC;
+  transition: all ease-in-out 1000ms;
+}
+
+.coeur:hover {
+  color: #fff;
 }
 
 .menus {
@@ -88,78 +105,134 @@ h2, h4, h5 {
   width: 42px;
 }
 
-.repas {
-  background-color: #fff;
-  border-radius: 12px 12px;
-  padding: 0.6em 0.6em;
-  margin-bottom: 1em;
-  box-shadow: 0 3px 8px #dcdcdc;
+.fas.fa-check-circle {
+  color: #fff;
 }
 
+.info_price_box {
+  justify-content: space-between;
+}
+
+.repas {
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 12px 12px;
+  margin-bottom: 1em;
+  box-shadow: 0 3px 8px #dcdcdc;
+  animation: microSlideMenus 3s;
+  transform-origin: bottom;
+  z-index: 1;
+  width: 100%;
+  height: 4em;
+  padding-left: 0.4em;
+}
+
+.repas_box {
+  width: auto;
+}
+
+.repas:hover .repas_box {
+  width: 71%;
+}
+.repas:hover .btn_coche {
+  display: flex;
+  justify-content: center;
+  width: 5.5em;
+  height: 100%;
+  border-radius: 0 12px 12px 0;
+  background-color: #99e2d0;
+  animation-name: taille;
+  animation-duration: 500ms;
+  transform-origin: right;
+  z-index: 2;
+  overflow: hidden;
+}
+.repas:hover .coche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+  animation-name: rotation;
+  animation-duration: 800ms;
+  animation-iteration-count: 1;
+  z-index: 3;
+  font-size: 1.5em;
+  margin: 0 20px;
+}
+@keyframes taille {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 5.5em;
+  }
+}
+@keyframes rotation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    transform: rotate(360deg);
+    width: 100%;
+  }
+}
+
+@keyframes microSlideMenus {
+  0% {
+    margin-top: 2em;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
 h3 {
   margin: 0;
   font-size: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 p {
   margin: 0.5em 0 0 0;
   font-size: 0.9em;
-  display: flex;
-  justify-content: space-between;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .price {
   font-weight: 700;
+  margin: 0.4em 0.3em 0 0.5em;
 }
 
-@media only screen and (min-width: 768px) {
-  h1 {
-    text-align: center;
-    font-size: 1.7em;
-  }
-
-  .menus {
-    margin: 1em 2em 1em 2em;
-  }
-
-  .logo {
-    margin: 2% 1% 1% 35%;
-    height: 1.8em;
-  }
-
-  .visuel {
-    height: 300px;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .logo {
-    margin: 2% 1% 1% 40%;
-  }
-}
-@media only screen and (min-width: 1920px) {
-  .logo {
-    margin: 2% 1% 1% 44%;
-  }
-}
 .btn_validation {
-  background: linear-gradient(#ff79dA, #9356dc);
+  background: linear-gradient(#ff79da, #9356DC);
+  font-family: "Roboto", sans-serif;
   border-radius: 50px 50px;
   width: 15em;
   display: block;
   margin: auto;
   padding: 1em 1em;
   border-style: none;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 0.9em;
   color: #fff;
   box-shadow: 0 3px 8px #a9a9a9;
 }
+.btn_validation:hover {
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  filter: brightness(110%);
+  box-shadow: 0 2px 10px 2px #8f8f8f;
+}
 
 footer {
   background-color: #323232;
   color: #fff;
-  width: 100%;
   height: 11em;
 }
 
@@ -171,7 +244,6 @@ footer li {
 footer ul {
   margin: 0;
 }
-
 footer ul a {
   color: #fff;
 }
@@ -190,6 +262,89 @@ h6 {
 
 .i_hands {
   font-size: 0.8em;
+}
+
+@media only screen and (min-width: 320px) {
+  .repas_box {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 414px) {
+  .menus {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .pied {
+    margin-left: 4%;
+  }
+
+  .repas:hover .repas_box {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    text-align: center;
+    font-size: 1.7em;
+  }
+
+  .logo {
+    margin: 2% 1% 1% 35%;
+    height: 1.8em;
+  }
+
+  .coeur {
+    margin-right: 5%;
+  }
+
+  .visuel {
+    height: 300px;
+  }
+
+  .repas {
+    margin-left: 0.5rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .logo {
+    margin: 2% 1% 1% 40%;
+  }
+
+  .pied {
+    margin-left: 8%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .logo {
+    margin: 2% 1% 1% 44%;
+  }
+
+  .repas {
+    margin: 1em 1em 1em 1em;
+  }
+
+  .pied {
+    margin-left: 7em;
+  }
+
+  .coeur {
+    margin-right: 10%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .coeur {
+    margin: -1.1em 5em 0 0;
+  }
+
+  .container {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .coeur {
+    margin: -1.1em 7em 0 0;
+  }
 }
 
 /*# sourceMappingURL=la_palette_du_gout.css.map */

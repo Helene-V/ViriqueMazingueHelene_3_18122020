@@ -271,7 +271,12 @@ h6 {
 }
 @media only screen and (min-width: 414px) {
   .menus {
-    margin: 1em 2em 1em 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .pied {
+    margin-left: 4%;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -285,12 +290,12 @@ h6 {
     height: 1.8em;
   }
 
-  .visuel {
-    height: 300px;
+  .coeur {
+    margin-right: 5%;
   }
 
-  .menus {
-    margin: 1em 4em 1em 4em;
+  .visuel {
+    height: 300px;
   }
 
   .repas {
@@ -309,10 +314,40 @@ h6 {
   .container {
     display: flex;
   }
+
+  .pied {
+    margin-left: 8%;
+  }
 }
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1280px) {
   .logo {
     margin: 2% 1% 1% 44%;
+  }
+
+  .repas {
+    margin: 1em 1em 1em 1em;
+  }
+
+  .pied {
+    margin-left: 7em;
+  }
+
+  .coeur {
+    margin-right: 10%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .container_2 {
+    display: flex;
+  }
+
+  .coeur {
+    margin: -1.1em 5em 0 0;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .coeur {
+    margin: -1.1em 7em 0 0;
   }
 }
 

@@ -244,6 +244,8 @@ h5 {
 
 .coeur {
   font-size: 26px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: end;
   margin: -1.5em 1em 0 0;
   z-index: 1;

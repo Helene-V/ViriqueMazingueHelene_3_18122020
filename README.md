@@ -19,6 +19,6 @@ Les contraintes techniques :
 - Site compatible sur Chrome et Firefox
 - Validation W3C en HTML et CSS sans erreur
 
-GitHub Pages : https://helene-v.github.io/ViriqueHelene_3_18122020/accueil.html
+GitHub Pages : https://helene-v.github.io/ViriqueMazingueHelene_3_18122020/accueil.html
 
 Parcours "Développeur Web" - OpenClassRooms
